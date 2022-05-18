@@ -1,0 +1,27 @@
+.headerMenu {
+	padding: .75em;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	background-color: white;
+	box-sizing: border-box;
+	&__logo {
+		margin-right: 3em;
+	}
+	&__items {
+		flex-grow: 1;
+		cursor: pointer;
+	}
+	&__item {
+		margin-right: 1em;
+		text-decoration: none !important;
+		transition: .2s;
+		color: darken($gray, 30%);
+		&:hover {
+			color: $blue;
+		}
+	}
+}

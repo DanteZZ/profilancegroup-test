@@ -1,0 +1,28 @@
+.btn {
+	border: none;
+	padding: .5em 1em;
+	outline: none;
+	cursor: pointer;
+	transition: .2s;
+	margin-right: .2em;
+	&:hover {
+		filter: brightness(.8);
+	}
+	&-block {
+		display: block;
+		width: 100%;
+		margin-right: none;
+	}
+	&-blue {
+		background-color: $blue;
+		color: $white;
+	}
+	&-green {
+		background-color: $green;
+		color: $white;
+	}
+	&-red {
+		background-color: $red;
+		color: $white;
+	}
+}

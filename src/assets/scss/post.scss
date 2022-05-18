@@ -1,0 +1,35 @@
+.posts {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(auto-fill, 1fr);
+	grid-column-gap: 8px;
+	grid-row-gap: 8px;
+}
+
+.post {
+	padding: 1em;
+	border: 1px solid $gray;
+	display: flex column;
+	&__title {
+		font-weight: 600;
+		font-size: larger;
+		margin-bottom: .5em;
+	}
+	&__content {
+		margin-bottom: .5em;
+	}
+	&__footer {
+		display: flex;
+		align-items: flex-end;
+		min-height: 2em;
+	}
+	&__buttons {
+		flex-grow: 1;
+	}
+}
+
+@media (max-width: 800px) {
+	.posts {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
